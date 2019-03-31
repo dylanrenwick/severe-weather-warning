@@ -41,6 +41,8 @@ namespace RoR2ML.Installer
             if (!canOpenFile(assemblyFilePath)) error("Could not open file " + assemblyFilePath.FullName);
             log("Found the file at " + assemblyFilePath.FullName);
             
+            asmResolver.AddSearchDirectory(assemblyFilePath.Directory.FullName);
+            
             string loaderFilePath = getLoaderFilePath();
             if (!canOpenFile(loaderFilePath)) error("Could not open file " + loaderFilePath);
 
