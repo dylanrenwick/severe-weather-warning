@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoRPL", "RoRPL\RoRPL.csproj", "{E6E6399B-9757-4BF5-8960-3469BFB50299}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoR2ML", "RoR2ML\RoR2ML.csproj", "{E6E6399B-9757-4BF5-8960-3469BFB50299}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoRPL.Logging", "RoRPL.Logging\RoRPL.Logging.shproj", "{02C96A1A-074F-4820-ADB9-417487348761}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoR2ML.Logging", "RoR2ML.Logging\RoR2ML.Logging.shproj", "{02C96A1A-074F-4820-ADB9-417487348761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoRPL.Installer", "RoRPL.Installer\RoRPL.Installer.csproj", "{F69BF3C1-819E-40FE-B69D-2B427A57E3B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoR2ML.Installer", "RoR2ML.Installer\RoR2ML.Installer.csproj", "{F69BF3C1-819E-40FE-B69D-2B427A57E3B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

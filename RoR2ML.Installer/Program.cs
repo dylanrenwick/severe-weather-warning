@@ -5,20 +5,20 @@ using System.Net.Mime;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-using RoRPL;
-using RoRPL.Logging;
+using RoR2ML;
+using RoR2ML.Logging;
 
-namespace RoRPL.Installer
+namespace RoR2ML.Installer
 {
     internal class Program
     {
         private const string GAME_DIR_NAME = "Risk of Rain 2";
-        private const string LOADER_ASSEMBLY_NAME = "RoRPL.dll";
+        private const string LOADER_ASSEMBLY_NAME = "RoR2ML.dll";
         
         private const string ASSEMBLY_ENTRY_POINT_TYPE = "RoR2.UI.MainMenu.MainMenuController";
         private const string ASSEMBLY_ENTRY_POINT_METHOD = "Start";
 
-        private const string LOADER_ENTRY_POINT_TYPE = "RoRPL.Loader";
+        private const string LOADER_ENTRY_POINT_TYPE = "RoR2ML.Loader";
         private const string LOADER_ENTRY_POINT_METHOD = "Init";
         
         private static BaseAssemblyResolver asmResolver;
@@ -100,10 +100,10 @@ namespace RoRPL.Installer
             // Check if the entry point has already been injected
             if (findMatchingInstruction(assemblyEntryPointMethod.Body.Instructions, entryPoint) != -1)
                 error("Entry point already found, the loader has already been installed!");
-
+            
             FieldDefinition searchField = assemblyEntryPointType.Fields.Single(x => x.Name == "wasInMultiplayer");
             Instruction entryPointIndicator = methodILProcessor.Create(OpCodes.Stsfld, searchField);
-
+            
             int entryPointIndex =
                 findMatchingInstruction(assemblyEntryPointMethod.Body.Instructions, entryPointIndicator);
             if (entryPointIndex < 0) error("Could not find entry point instruction");

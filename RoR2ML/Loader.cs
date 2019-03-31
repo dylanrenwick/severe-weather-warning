@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace RoRPL
+namespace RoR2ML
 {
     public class Loader
     {

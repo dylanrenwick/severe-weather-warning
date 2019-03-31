@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RoRPL.Logging
+namespace RoR2ML.Logging
 {
     /// <summary>
     /// Used internally by the XTERM utility class.

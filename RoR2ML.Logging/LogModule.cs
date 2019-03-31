@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-namespace RoRPL.Logging
+namespace RoR2ML.Logging
 {
     /// <summary>
     /// Abstracts the different log level functions and outputs loglines with a tag and moduleName prepended to them.

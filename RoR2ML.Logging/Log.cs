@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
 
-namespace RoRPL.Logging
+namespace RoR2ML.Logging
 {    
     /// <summary>
     /// Provides static access to the SR_PluginLoader's logging system.

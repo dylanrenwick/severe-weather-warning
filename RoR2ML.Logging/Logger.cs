@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace RoRPL.Logging
+namespace RoR2ML.Logging
 {
     /// <summary>
     /// Manages the actual output part of the logging process

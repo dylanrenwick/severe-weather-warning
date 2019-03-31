@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 // https://en.wikipedia.org/wiki/ANSI_escape_code#Windows_and_DOS
-namespace RoRPL.Logging
+namespace RoR2ML.Logging
 {
 
     /// <summary>
