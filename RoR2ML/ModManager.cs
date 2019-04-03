@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using RoR2ML.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -29,6 +30,8 @@ namespace RoR2ML
             
             SceneManager.activeSceneChanged += OnSceneChanged;
             SceneManager.sceneLoaded += OnSceneLoaded;
+            
+            AddSceneCallback("title", AddMainMenuExtension);
         }
 
         private void OnSceneLoaded(Scene newScene, LoadSceneMode arg1)
@@ -42,6 +45,13 @@ namespace RoR2ML
         {
             Loader.Log($"Changing from {currentScene.name} ({currentScene.path}) to {nextScene.name} ({nextScene.path})");
         }
+
+        private void AddMainMenuExtension(Scene newScene)
+        {
+            GameObject mainMenuExtension = new GameObject();
+            mainMenuExtension.AddComponent<MainMenuExtension>();
+        }
+
         private void HandleSceneLoadEvents(Scene newScene)
         {
             if (!sceneCallbacks.TryGetValue(newScene.name, out List<Action<Scene>> callbacks)) return;
