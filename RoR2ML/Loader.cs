@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using UnityEngine;
 
 namespace RoR2ML
 {
@@ -9,7 +10,9 @@ namespace RoR2ML
             // This is our "entry point" where stuff starts
             
             // We need to create a GameObject running a custom MonoBehaviour
-            // Then flag it as DontDestroyOnLoad so that it remains persistent 
+            // Then flag it as DontDestroyOnLoad so that it remains persistent
+            
+            Debug.Log("RoR2ML Installed");
         }
     }
 }
