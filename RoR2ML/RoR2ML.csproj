@@ -8,6 +8,9 @@
       <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
         <HintPath>..\3rd_Party_Libs\UnityEngine.CoreModule.dll</HintPath>
       </Reference>
+      <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\3rd_Party_Libs\UnityEngine.UI.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
