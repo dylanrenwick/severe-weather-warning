@@ -27,8 +27,8 @@ namespace RoR2ML
         private static Object CreateManagerObject()
         {
             GameObject managerObject = new GameObject();
-
-            managerObject.AddComponent(typeof(ModManager));
+            managerObject.name = "RoR2ML Manager";
+            managerObject.AddComponent<ModManager>();
 
             return managerObject;
         }
