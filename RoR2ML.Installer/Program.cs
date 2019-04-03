@@ -46,7 +46,7 @@ namespace RoR2ML.Installer
             string loaderFilePath = getLoaderFilePath();
             if (!canOpenFile(loaderFilePath)) error("Could not open file " + loaderFilePath);
 
-            string gamePath = assemblyFilePath.Directory.Parent.FullName;
+            string gamePath = assemblyFilePath.Directory.FullName;
             string fileName = Path.DirectorySeparatorChar + LOADER_ASSEMBLY_NAME;
             
             log("Finding files...");
