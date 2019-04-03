@@ -8,6 +8,7 @@ namespace RoR2ML
         private const string ML_VER = "v0.1.0";
         
         private static bool isLoaded = false;
+        private static Object modManager;
         
         public static void Init()
         {
@@ -18,7 +19,17 @@ namespace RoR2ML
             // Then flag it as DontDestroyOnLoad so that it remains persistent
             
             Log("RoR2ML Installed");
+            Log("Creating ModManager object");
+
+            modManager = CreateManagerObject();
             isLoaded = true;
+        }
+
+        private static Object CreateManagerObject()
+        {
+            GameObject managerObject = new GameObject();
+
+            return managerObject;
         }
 
         public static void Log(string message)
