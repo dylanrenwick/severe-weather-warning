@@ -1,18 +1,18 @@
 using System.ComponentModel;
 using UnityEngine;
+using RoR2;
 
 namespace RoR2ML
 {
     public class Loader
     {
         private const string ML_VER = "v0.1.0";
-        
-        private static bool isLoaded = false;
         private static Object modManager;
         
         public static void Init()
         {
-            if (isLoaded) return;
+            if (RoR2Application.isModded) return;
+            RoR2Application.isModded = true;
             // This is our "entry point" where stuff starts
             
             // We need to create a GameObject running a custom MonoBehaviour
@@ -22,7 +22,6 @@ namespace RoR2ML
             Log("Creating ModManager object");
 
             modManager = CreateManagerObject();
-            isLoaded = true;
         }
 
         private static Object CreateManagerObject()
