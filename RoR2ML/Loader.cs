@@ -29,6 +29,8 @@ namespace RoR2ML
         {
             GameObject managerObject = new GameObject();
 
+            managerObject.AddComponent(typeof(ModManager));
+
             return managerObject;
         }
 
