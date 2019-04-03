@@ -2,3 +2,4 @@
 **/bin
 **/obj
 3rd_Party_Libs/UnityEngine*.dll
+3rd_Party_Libs/Assembly-CSharp.dll
